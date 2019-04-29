@@ -1,6 +1,4 @@
-var par = yearsAgo(1976);
 function yearsAgo(par){
-    var year = 2019;
 }
 
 
