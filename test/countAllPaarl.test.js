@@ -1,6 +1,6 @@
 describe('this test' , function(){
     it('countAllPaarl' , function(){
-        assert.equal((["CJ 345 123","CJ 2345"]).length, 2);
+        assert.equal(countAllPaarl("CJ 345,CJ 2345,CL 7756"), 2);
 
     });
 
