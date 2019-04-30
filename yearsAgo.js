@@ -1,10 +1,6 @@
 function yearsAgo(par){
-}
-
-
-describe('this test' , function(){
-    it('yearsAgo' , function(){
-        assert.equal(2019 - 1976,43);
-
-    });
-});
+        var date = new Date()
+        var year = (date.getFullYear())
+        var newYear = year - par
+            return(newYear)
+  }

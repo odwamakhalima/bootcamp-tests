@@ -1,10 +1,7 @@
-var isGP = regCheck('DV 23 NB GP', 'GP');
-function regCheck(isGP){
+function regCheck(reg, loc){
+	if(reg.endsWith(loc)){
+    	return true;
+    }
+  	else{
+    return false}
  }
- describe('this test' , function(){
-    it('regCheck' , function(){
-        assert.equal(regCheck('DV 23 NB GP', 'GP'),isGP);
-
-    });
-
-});
