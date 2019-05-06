@@ -1,4 +1,4 @@
-describe('function that checks items with over 25 quality',function(){
+describe('function that checks items with over 20 quality',function(){
     it('test the items with more that 20 quality and should return pears because its the only one with quality over 20',function(){
         assert.equal(findItemsOver20([{"name":"apples","qty":10},{"name":"pears","qty":37},]),"pears");
     });
