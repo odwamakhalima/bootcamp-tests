@@ -9,6 +9,9 @@ function fromWhere(reg){
       case 'CA':
         return 'Cape Town';
         break;
+        case '':
+        return '';
+        break;
       default:
         return 'Some other place!'
               }

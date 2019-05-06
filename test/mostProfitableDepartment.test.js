@@ -1,5 +1,11 @@
-describe('this test',function(){
-    it('mostProfitableDepartment',function(){
+describe('function return the department with most sales per day',function(){
+    it('should return hardware',function(){
         assert.equal(mostProfitableDepartment([{"department":"carpentry","sales":5500,"day":"Monday"},{"department":"hardware","sales":7500,"day":"Tuesday"}]),'hardware');
+    });
+    it('should return carpentry',function(){
+        assert.equal(mostProfitableDepartment([{"department":"carpentry","sales":5500,"day":"Monday"},{"department":"hardware","sales":500,"day":"Tuesday"}]),'carpentry');
+    });
+    it('should return technology',function(){
+        assert.equal(mostProfitableDepartment([{"department":"carpentry","sales":500,"day":"Monday"},{"department":"technology","sales":7500,"day":"Tuesday"}]),'technology');
     });
 });

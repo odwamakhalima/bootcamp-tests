@@ -1,6 +1,11 @@
-describe('this test',function(){
-    it('findItemsOver20',function(){
+describe('function that checks items with over 25 quality',function(){
+    it('test the items with more that 20 quality and returns pears',function(){
         assert.equal(findItemsOver20([{"name":"apples","qty":10},{"name":"pears","qty":37},]),"pears");
+    });
+    it('test the items with more that 20 quality and return bananas',function(){
         assert.equal(findItemsOver20([{"name":"bananas","qty":27},{"name":"apples","qty":3}]),"bananas");
+    });
+    it('test the items with more that 20 quality and return an empty list because theres no item with over 20 quality',function(){
+        assert.deepEqual(findItemsOver20([{"name":"bananas","qty":6},{"name":"apples","qty":7}]),[]);
     });
 });

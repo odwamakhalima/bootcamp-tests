@@ -1,5 +1,5 @@
 function totalPhoneBill(bill){
-	var billStr = bill.split(', ');
+	var billStr = bill.split(',');
   	var totalCalls = [];
   	var totalSms = [];
   	 	for(var i = 0;i < billStr.length;i++){
