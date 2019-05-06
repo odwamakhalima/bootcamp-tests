@@ -1,11 +1,11 @@
 describe('function that returns the sum of total sms and calls',function(){
-    it('should return total bill of calls',function(){
+    it('should return the length of the calls made and multiply it with 2.75',function(){
         assert.equal(totalPhoneBill('call,'),'R5.50');
     });
-    it('should return total bill of sms',function(){
+    it('should return the length of the sms made and multiply it with 0.65',function(){
         assert.equal(totalPhoneBill('sms,'),'R3.40');
     });
-    it('should return total bill of sms and 2 calls',function(){
+    it('should return the length of sms and 2 calls and multiply sms with 0,65 and the calls with 2.75 then add them together',function(){
         assert.equal(totalPhoneBill('sms,call,call'),'R6.15');
     });
 
